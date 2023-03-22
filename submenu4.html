@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <title>menu4</title>
+    <style>
+        body{
+            background-image: url(hg.jpg);
+            background-size: cover;
+        
+        }
+        div{
+            align-items: center;
+            margin-left: 200px;
+        }
+         
+        
+        nav{
+            width: 700px;
+            margin-left: 60px;
+            color:white;
+            padding-left: 10px;
+            margin-top: 30px;
+            background-color:#242323;  
+        }
+        
+        nav a{
+            display: block;
+            color: #e6dada;
+            line-height: 25px;
+            padding: 15px 35px 15px 10px;
+            text-decoration: none;
+            font-size: 23px;
+            font-weight: 450;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px ;
+        } 
+        nav a:hover{
+            color: rgb(38, 141, 224);
+            background-color: rgb(94, 90, 86);
+            transition: all .4s ease;
+        } 
+        nav ul{
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            white-space: nowrap;
+            float: none;
+        }
+        nav ul li ul a{
+            font-size: 17px;
+            font-weight: lighter;
+            padding: 5px;
+           
+        }
+        nav ul li:hover>ul{
+            display: inherit;
+            background-color:#272626;
+            transition:  all .3s ease;
+
+        }
+        nav ul ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+        nav ul ul li{
+            
+            display: list-item;
+            position: relative;
+        }
+        nav ul ul ul{
+            position: absolute;
+            top:0;
+            left:100%;
+            
+        }  
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work <span class="material-symbols-outlined">
+                    expand_more
+                    </span></a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Ux Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Identity</a></li>
+                        <li><a href="#">Game Development <span class="material-symbols-outlined">
+                            chevron_right
+                            </span></a>
+                            <ul>
+                                <li><a href="#">Game Engine</a></li>
+                                <li><a href="#">Unreal Engine</a></li>
+                                <li><a href="#">Unity</a></li>
+                                <li><a href="#">Amazon Game Engines</a></li>
+                                <li><a href="#">CryEngine</a></li>
+                            </ul>
+                        </li>
+                    </ul>                
+                </li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

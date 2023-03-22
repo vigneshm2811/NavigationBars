@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub-menus </title>
+    <style>
+        nav{
+            width: 100%;
+            padding-left: 30px;
+            color:white;
+            margin-top: 30px;
+            text-align: center;
+            background-color: orange;  
+        }
+        nav a{
+            display: block;
+            color: #000;
+            line-height: 35px;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+            border:2px ;
+            border-radius: ;
+
+        }
+        nav a:hover{
+            color: rgb(255, 251, 240);
+            background-color: rgb(231, 128, 43);
+            transition: all .4s ease;
+        }
+        nav ul{
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            white-space: nowrap;
+            float: none;
+        }
+        nav ul li ul a{
+            font-size: 20px;
+            font-weight: lighter;
+            padding: 5px;
+           
+        }
+        nav ul li:hover>ul{
+            display: inherit;
+            background-color: rgb(241, 177, 117);
+            transition:  all .5s ease;
+
+        }
+        nav ul ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+        nav ul ul li{
+            
+            display: list-item;
+            position: relative;
+        }
+        nav ul ul ul{
+            position: absolute;
+            top:0;
+            left:100%;
+            
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul >
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Blogs</a>
+                <ul>
+                    <li><a href="#">Achivements</a></li>
+                    <li><a href="#">Newsletter</a>
+                        <ul>
+                            <li><a href="#">Monthly Newsletter</a></li>
+                            <li><a href="#">yearly Newsletter</a></li>
+                            <li><a href="#">Magazines</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </li>
+            <li><a href="#">services</a>
+                <ul>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Designing</a>
+                        <ul>
+                            <li><a href="#">Unity</a></li>
+                            <li><a href="#">Blender</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="#">testing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="#">Games</a>
+                        <ul>
+                            <li><a href="#">God of war</a></li>
+                            <li><a href="#">GTA 5</a></li>
+                            <li><a href="#">Mine craft</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gamers</a>
+                        <ul>
+                            <li><a href="#">Boy Gamers</a></li>
+                            <li><a href="#">Girl gamer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Stake holders</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    
+</body>
+</html>

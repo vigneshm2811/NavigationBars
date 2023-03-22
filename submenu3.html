@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu3</title>
+          <style>
+     
+       body{
+            background-color: #d0d8cb ;
+        }
+        .menu{
+            align-items: center;
+            margin-left: 120px;
+        }
+         
+        
+        nav{
+            width: 960px;
+            margin-left: 40px;
+            color:white;
+            margin-top: 30px;
+            text-align: center;
+            align-items: center;
+            background-color:#fc5a03;  
+        }
+        
+        nav a{
+            display: block;
+            color: #e6dada;
+            line-height: 25px;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px ;
+        } 
+        nav a:hover{
+            color: rgb(240, 224, 215);
+            background-color: rgb(189, 92, 13);
+            transition: all .4s ease;
+        } 
+        nav ul{
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            white-space: nowrap;
+            float: none;
+        }
+        nav ul li ul a{
+            font-size: 17px;
+            font-weight: lighter;
+            padding: 5px;
+           
+        }
+        nav ul li:hover>ul{
+            display: inherit;
+            background-color:#fc5a03;
+            transition:  all .3s ease;
+
+        }
+        nav ul ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+        nav ul ul li{
+            
+            display: list-item;
+            position: relative;
+        }
+        nav ul ul ul{
+            position: absolute;
+            top:0;
+            left:100%;
+            
+        }     
+
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">WordPress</a>
+                    <ul>
+                        <li><a href="#">word</a></li>
+                        <li><a href="#">press</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design +</a>
+                    <ul>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Tutorials</a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">JQuery</a></li>
+                                <li><a href="#">Other +</a>
+                                    <ul>
+                                        <li><a href="#">Stuff</a></li>
+                                        <li><a href="#">Things</a></li>
+                                        <li><a href="#">Other Stuff</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </li>
+                <li><a href="#">Graphics Design</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>     
+            </ul>
+        </nav>  
+
+    </div>
+    
+</body>
+</html>
